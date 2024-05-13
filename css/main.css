@@ -103,6 +103,7 @@ header {
       font-size: 20px;
       font-weight: 700;
       border-bottom: 2px solid transparent;
+      color: #000584;
 
       &:hover {
         border-bottom: 2px solid #000584;
@@ -176,7 +177,8 @@ header {
   color: white;
 }
 
-.our-school-title {
+.our-school-title,
+.gallery-title {
   font-size: 32px;
   text-align: center;
   color: #faff00;
@@ -213,6 +215,135 @@ header {
   color: #faff00;
 }
 
+.gallery-wrapper {
+  padding: 50px 0;
+  background-color: #000584;
+  text-align: center;
+}
+
+.gallery-set {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+}
+
+.gallery-image {
+  width: 100%;
+}
+
+.gallery-btn {
+  padding: 10px 20px;
+  margin-inline: auto;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #000584;
+  background-color: #faff00;
+  display: inline-block;
+  transition: all 0.2s linear;
+
+  &:hover {
+    scale: 1.1;
+  }
+
+  &:active {
+    scale: 1;
+  }
+}
+
+.map-wrapper {
+  background-color: #000584;
+}
+
+.map {
+  height: 500px;
+  position: relative;
+}
+
+.map-info {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  background-image: linear-gradient(
+    to right,
+    #000584 75%,
+    #0004849d,
+    #00048400
+  );
+}
+
+.map-info-title {
+  max-width: 420px;
+  margin: 50px 0;
+  font-size: 32px;
+  color: #faff00;
+}
+
+.map-info-textarea {
+  width: 400px;
+  height: 150px;
+  padding: 5px;
+  display: block;
+  outline: none;
+  background-color: #faff00;
+}
+
+.map-info-btn {
+  margin: 30px 0;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #000584;
+  background-color: #faff00;
+  border: none;
+  transition: all 0.2s linear;
+  cursor: pointer;
+
+  &:hover {
+    scale: 1.1;
+  }
+
+  &:active {
+    scale: 1;
+  }
+}
+
+.map-iframe {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+footer {
+  padding: 50px 0;
+  background-color: black;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-inner-title {
+  color: white;
+}
+
+.footer-inner-socials {
+  display: flex;
+  align-items: center;
+
+  a {
+    margin-left: 50px;
+    img {
+      width: 30px;
+    }
+  }
+}
+
 /* Responsive design start */
 @media (max-width: 900px) {
   .header-list {
@@ -233,6 +364,15 @@ header {
     padding: 40px;
     width: 50%;
   }
+
+  .map-info-title {
+    max-width: 350px;
+  }
+
+  .map-info-textarea {
+    width: 300px;
+    height: 120px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -244,6 +384,47 @@ header {
         font-size: 16px;
       }
     }
+  }
+
+  .gallery-set {
+    padding: 40px 0;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .map {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: static;
+  }
+
+  .map-info {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+
+  .map-info-title {
+    max-width: 80%;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .map-info-textarea {
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  .map-info-btn {
+    display: block;
+    margin-inline: auto;
+  }
+
+  .map-iframe {
+    width: 100%;
+    height: 300px;
+    position: static;
   }
 }
 
@@ -270,7 +451,7 @@ header {
   .header-list--active {
     transform: scale(1) rotate(0);
   }
-  
+
   .burger {
     display: block;
   }
@@ -278,11 +459,10 @@ header {
   .burger--active {
     transform: translateX(5px);
     span {
-
       &:nth-child(1) {
         transform: rotate(42deg) translateY(8px);
       }
-  
+
       &:nth-child(2) {
         opacity: 0;
       }
@@ -312,8 +492,15 @@ header {
     padding: 50px 0;
   }
 
-  .our-school-title {
+  .our-school-title,
+  .gallery-title,
+  .map-info-title {
     font-size: 26px;
+  }
+
+  .map-info-title {
+    max-width: 100%;
+    margin: 30px 0;
   }
 
   .our-school-line {
@@ -323,15 +510,51 @@ header {
   .our-school-item {
     padding: 40px 20px;
   }
+
+  .gallery-set {
+    padding: 30px 0;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: auto auto auto auto auto;
+    gap: 10px;
+  }
+
+  .footer-inner-title {
+    font-size: 20px;
+  }
+
+  .footer-inner-socials {
+    a {
+      img {
+        width: 24px;
+      }
+    }
+  }
 }
 
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .our-school-item-count {
     font-size: 34px;
   }
-  
+
   .our-school-item-text {
     font-size: 16px;
+  }
+
+  .map-info-textarea {
+    width: 100%;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+  }
+
+  .footer-inner-socials {
+    width: 100%;
+    margin-top: 30px;
+    justify-content: space-around;
+    a {
+      margin: 0px;
+    }
   }
 }
 
