@@ -1,0 +1,657 @@
+@font-face {
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inika-v21-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inika-v21-latin-700.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffeb;
+  font-family: "Inika";
+}
+
+.container {
+  max-width: 1400px;
+  margin-inline: auto;
+  padding: 0 2%;
+}
+
+.supheader-wrapper {
+  padding: 5px 0;
+  background-color: black;
+}
+
+.supheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.supheader-tel {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: serif;
+  transition: all 0.1s linear;
+
+  &:hover {
+    scale: 1.1;
+  }
+
+  span {
+    margin-left: 10px;
+  }
+}
+
+.supheader-socials {
+  display: flex;
+  align-items: center;
+
+  a {
+    margin-left: 30px;
+    transition: all 0.1s linear;
+
+    &:hover {
+      scale: 1.2;
+    }
+  }
+}
+
+header {
+  padding: 5px 0;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: #ffffeb;
+}
+
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+
+  .header-list-item {
+    margin-left: 100px;
+
+    .header-list-link {
+      font-size: 20px;
+      font-weight: 700;
+      border-bottom: 2px solid transparent;
+      color: #000584;
+
+      &:hover {
+        border-bottom: 2px solid #000584;
+      }
+    }
+  }
+}
+
+.burger {
+  display: none;
+  transition: all 0.3s linear;
+
+  span {
+    width: 30px;
+    height: 4px;
+    display: block;
+    transition: all 0.3s linear;
+    background-color: #000584;
+
+    &:nth-child(2) {
+      margin: 2px 0;
+    }
+  }
+}
+
+.hero-wrapper {
+  padding: 230px 0;
+  background-image: url("../images/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-title {
+  max-width: 520px;
+  font-size: 50px;
+  color: white;
+
+  span {
+    color: #faff00;
+  }
+}
+
+.hero-text {
+  margin: 50px 0;
+  max-width: 580px;
+  font-size: 20px;
+  color: white;
+}
+
+.hero-link {
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #000584;
+  background-color: #faff00;
+  display: inline-block;
+  transition: all 0.2s linear;
+
+  &:hover {
+    scale: 1.1;
+  }
+
+  &:active {
+    scale: 1;
+  }
+}
+
+.our-school-wrapper {
+  padding: 100px 0;
+  background-color: #000584;
+  color: white;
+}
+
+.our-school-title,
+.gallery-title,
+.management-title {
+  font-size: 32px;
+  text-align: center;
+  color: #faff00;
+}
+
+.our-school-line {
+  width: 100%;
+  height: 2px;
+  margin: 50px 0;
+  background-color: #faff00;
+}
+
+.our-school-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.our-school-item {
+  text-align: center;
+}
+
+.our-school-item-count {
+  padding: 10px 0;
+  font-size: 50px;
+  font-family: serif;
+  font-weight: bold;
+  color: #faff00;
+}
+
+.our-school-item-text {
+  font-size: 20px;
+  color: #faff00;
+}
+
+.management-wrapper {
+  padding: 50px 0;
+  background-color: #000584;
+}
+
+.management-cards {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.management-card {
+  width: 320px;
+  height: 420px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-image: linear-gradient(transparent 70%, #000584), url("../images/rahbariyat1.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s linear;
+  box-shadow: 0 0 10px #f2ff00;
+  position: relative;
+  overflow: hidden;
+}
+
+.management-card:hover {
+  background-image: linear-gradient(transparent 10%, #000584), url("../images/rahbariyat1.jpg");
+}
+
+.management-card:nth-child(2) {
+  background-image: linear-gradient(transparent 70%, #000584), url("../images/rahbariyat2.jpg");
+}
+
+.management-card:nth-child(2):hover {
+  background-image: linear-gradient(transparent 10%, #000584), url("../images/rahbariyat2.jpg");
+}
+
+.management-card:nth-child(3) {
+  background-image: linear-gradient(transparent 70%, #000584), url("../images/rahbariyat3.jpg");
+}
+
+.management-card:nth-child(3):hover {
+  background-image: linear-gradient(transparent 10%, #000584), url("../images/rahbariyat3.jpg");
+}
+
+.management-card-title {
+  color: white;
+  margin-top: 95%;
+  margin-bottom: 10px;
+  transform: translateY(50px);
+  transition: all 0.3s linear;
+}
+
+.management-card-text {
+  color: white;
+  transform: translateY(100px);
+  transition: all 0.3s linear;
+}
+
+.management-card:hover .management-card-title, 
+.management-card:hover .management-card-text {
+  transform: translateY(0px);
+}
+
+.gallery-wrapper {
+  padding: 50px 0;
+  background-color: #000584;
+  text-align: center;
+}
+
+.gallery-set {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+}
+
+.gallery-image {
+  width: 100%;
+}
+
+.gallery-btn {
+  padding: 10px 20px;
+  margin-inline: auto;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #000584;
+  background-color: #faff00;
+  display: inline-block;
+  transition: all 0.2s linear;
+
+  &:hover {
+    scale: 1.1;
+  }
+
+  &:active {
+    scale: 1;
+  }
+}
+
+.map-wrapper {
+  background-color: #000584;
+}
+
+.map {
+  height: 500px;
+  position: relative;
+}
+
+.map-info {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  background-image: linear-gradient(
+    to right,
+    #000584 75%,
+    #0004849d,
+    #00048400
+  );
+}
+
+.map-info-title {
+  max-width: 420px;
+  margin: 50px 0;
+  font-size: 32px;
+  color: #faff00;
+}
+
+.map-info-textarea {
+  width: 400px;
+  height: 150px;
+  padding: 5px;
+  display: block;
+  outline: none;
+  background-color: #faff00;
+}
+
+.map-info-btn {
+  margin: 30px 0;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #000584;
+  background-color: #faff00;
+  border: none;
+  transition: all 0.2s linear;
+  cursor: pointer;
+
+  &:hover {
+    scale: 1.1;
+  }
+
+  &:active {
+    scale: 1;
+  }
+}
+
+.map-iframe {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+footer {
+  padding: 50px 0;
+  background-color: black;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-inner-title {
+  color: white;
+}
+
+.footer-inner-socials {
+  display: flex;
+  align-items: center;
+
+  a {
+    margin-left: 50px;
+    img {
+      width: 30px;
+    }
+  }
+}
+
+/* Responsive design start */
+@media (max-width: 900px) {
+  .header-list {
+    .header-list-item {
+      margin-left: 70px;
+
+      .header-list-link {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .hero-wrapper {
+    padding: 100px 0;
+  }
+
+  .our-school-item {
+    padding: 40px;
+    width: 50%;
+  }
+
+  .map-info-title {
+    max-width: 350px;
+  }
+
+  .map-info-textarea {
+    width: 300px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-list {
+    .header-list-item {
+      margin-left: 40px;
+
+      .header-list-link {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .gallery-set {
+    padding: 40px 0;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .map {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: static;
+  }
+
+  .map-info {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+
+  .map-info-title {
+    max-width: 80%;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .map-info-textarea {
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  .map-info-btn {
+    display: block;
+    margin-inline: auto;
+  }
+
+  .map-iframe {
+    width: 100%;
+    height: 300px;
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 5px 0;
+  }
+  .header-list {
+    width: 80%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    background-color: #faff00;
+    transition: all 0.4s linear;
+    transform-origin: left top;
+    transform: scale(0) rotate(180deg);
+
+    .header-list-item {
+      margin: 30px 0;
+    }
+  }
+
+  .header-list--active {
+    transform: scale(1) rotate(0);
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burger--active {
+    transform: translateX(5px);
+    span {
+      &:nth-child(1) {
+        transform: rotate(42deg) translateY(8px);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-42deg) translateY(-8px);
+      }
+    }
+  }
+
+  .hero-wrapper {
+    padding: 80px 0;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 40px;
+    max-width: 100%;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    font-size: 18px;
+  }
+
+  .our-school-wrapper {
+    padding: 50px 0;
+  }
+
+  .our-school-title,
+  .gallery-title,
+  .map-info-title {
+    font-size: 26px;
+  }
+
+  .map-info-title {
+    max-width: 100%;
+    margin: 30px 0;
+  }
+
+  .our-school-line {
+    margin: 20px 0;
+  }
+
+  .our-school-item {
+    padding: 40px 20px;
+  }
+
+  .gallery-set {
+    padding: 30px 0;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: auto auto auto auto auto;
+    gap: 10px;
+  }
+
+  .footer-inner-title {
+    font-size: 20px;
+  }
+
+  .footer-inner-socials {
+    a {
+      img {
+        width: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .our-school-item-count {
+    font-size: 34px;
+  }
+
+  .our-school-item-text {
+    font-size: 16px;
+  }
+
+  .map-info-textarea {
+    width: 100%;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+  }
+
+  .footer-inner-socials {
+    width: 100%;
+    margin-top: 30px;
+    justify-content: space-around;
+    a {
+      margin: 0px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .supheader-socials {
+    a {
+      margin-left: 20px;
+    }
+  }
+
+  .header-list {
+    width: 100%;
+  }
+
+  .hero-wrapper {
+    padding: 50px 0;
+  }
+
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+
+  .our-school-item {
+    width: 100%;
+    padding: 20px;
+  }
+}
