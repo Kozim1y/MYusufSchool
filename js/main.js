@@ -22,9 +22,3 @@ elCounts.forEach(count => {
   }, duration)
 })
 
-// For warning!
-let elWarning = document.querySelector(".warning")
-
-setTimeout(function() {
-  elWarning.style.display = "none"
-}, 3000)

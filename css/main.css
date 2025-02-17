@@ -50,7 +50,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #f2ff00;
+  background-color: #ffffeb;
   border-radius: 10px;
 }
 
@@ -62,7 +62,7 @@ body::-webkit-scrollbar-thumb {
 
 .supheader-wrapper {
   padding: 5px 0;
-  background-color: black;
+  background-color: #000584;
 }
 
 .supheader {
@@ -108,6 +108,7 @@ header {
   top: 0;
   z-index: 5;
   background-color: #ffffeb;
+  box-shadow: 0 2px 5px #000584;
 }
 
 .header_inner {
@@ -124,10 +125,9 @@ header {
 .header-list {
   display: flex;
   align-items: center;
+  gap: 70px;
 
   .header-list-item {
-    margin-left: 100px;
-
     .header-list-link {
       font-size: 20px;
       font-weight: 700;
@@ -202,7 +202,7 @@ header {
 
 .news-wrapper {
   padding: 50px 0;
-  background-color: #000584;
+  background-color: #ffffeb;
 }
 
 .news-cards {
@@ -218,10 +218,11 @@ header {
 .news-card {
   width: 350px;
   height: 450px;
-  background-image: linear-gradient(#f2ff00 50%, #07266f9d);
+  background-color: #3338db;
+  /* background-image: linear-gradient(#f2ff00 50%, #07266f9d); */
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 0 0 10px #f2ff00;
+  box-shadow: 0 0 10px #000584;
   position: relative;
 }
 
@@ -233,16 +234,13 @@ header {
 
 .our-school-wrapper {
   padding: 100px 0;
-  background-color: #000584;
+  background-color: #3338db;
 }
 
 .news-card-title {
-  padding: 5px;  
-  color: #000584;
-
-  &:hover {
-    color: rgb(163, 3, 3);
-  }
+  padding: 5px;
+  color: #f2ff00;
+  letter-spacing: 2px;
 }
 
 .news-card-date {
@@ -254,12 +252,15 @@ header {
 }
 
 .our-school-title,
-.gallery-title,
 .management-title,
 .news-title {
   font-size: 32px;
   text-align: center;
   color: #faff00;
+}
+
+.news-title {
+  color: #000584;
 }
 
 .our-school-line {
@@ -295,7 +296,7 @@ header {
 
 .management-wrapper {
   padding: 50px 0;
-  background-color: #000584;
+  background-color: #3338db;
 }
 
 .management-cards {
@@ -313,33 +314,39 @@ header {
   padding: 20px;
   text-align: center;
   border-radius: 10px;
-  background-image: linear-gradient(transparent 70%, #000584), url("../images/rahbariyat1.jpg");
+  background-image: linear-gradient(transparent 70%, #000584),
+    url("../images/rahbariyat1.jpg");
   background-size: cover;
   background-position: center;
   transition: all 0.3s linear;
-  box-shadow: 0 0 10px #f2ff00;
+  box-shadow: 0 0 10px #000584;
   position: relative;
   overflow: hidden;
 }
 
 .management-card:hover {
-  background-image: linear-gradient(transparent 10%, #000584), url("../images/rahbariyat1.jpg");
+  background-image: linear-gradient(transparent 10%, #000584),
+    url("../images/rahbariyat1.jpg");
 }
 
 .management-card:nth-child(2) {
-  background-image: linear-gradient(transparent 70%, #000584), url("../images/rahbariyat2.jpg");
+  background-image: linear-gradient(transparent 70%, #000584),
+    url("../images/rahbariyat2.jpg");
 }
 
 .management-card:nth-child(2):hover {
-  background-image: linear-gradient(transparent 10%, #000584), url("../images/rahbariyat2.jpg");
+  background-image: linear-gradient(transparent 10%, #000584),
+    url("../images/rahbariyat2.jpg");
 }
 
 .management-card:nth-child(3) {
-  background-image: linear-gradient(transparent 70%, #000584), url("../images/rahbariyat3.jpg");
+  background-image: linear-gradient(transparent 70%, #000584),
+    url("../images/rahbariyat3.jpg");
 }
 
 .management-card:nth-child(3):hover {
-  background-image: linear-gradient(transparent 10%, #000584), url("../images/rahbariyat3.jpg");
+  background-image: linear-gradient(transparent 10%, #000584),
+    url("../images/rahbariyat3.jpg");
 }
 
 .management-card-title {
@@ -356,50 +363,13 @@ header {
   transition: all 0.3s linear;
 }
 
-.management-card:hover .management-card-title, 
+.management-card:hover .management-card-title,
 .management-card:hover .management-card-text {
   transform: translateY(0px);
 }
 
-.gallery-wrapper {
-  padding: 50px 0;
-  background-color: #000584;
-  text-align: center;
-}
-
-.gallery-set {
-  padding: 50px 0;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: auto auto auto;
-  gap: 20px;
-}
-
-.gallery-image {
-  width: 100%;
-}
-
-.gallery-btn {
-  padding: 10px 20px;
-  margin-inline: auto;
-  font-weight: bold;
-  border-radius: 10px;
-  color: #000584;
-  background-color: #faff00;
-  display: inline-block;
-  transition: all 0.2s linear;
-
-  &:hover {
-    scale: 1.1;
-  }
-
-  &:active {
-    scale: 1;
-  }
-}
-
 .map-wrapper {
-  background-color: #000584;
+  background-color: #3338db;
 }
 
 .map {
@@ -414,7 +384,7 @@ header {
   z-index: 2;
   background-image: linear-gradient(
     to right,
-    #000584 75%,
+    #3338db 75%,
     #0004849d,
     #00048400
   );
@@ -465,7 +435,7 @@ header {
 
 footer {
   padding: 50px 0;
-  background-color: black;
+  background-color: #000584;
 }
 
 .footer-inner {
@@ -493,9 +463,8 @@ footer {
 /* Responsive design start */
 @media (max-width: 900px) {
   .header-list {
+    gap: 50px;
     .header-list-item {
-      margin-left: 70px;
-
       .header-list-link {
         font-size: 18px;
       }
@@ -521,23 +490,47 @@ footer {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .header-list {
-    .header-list-item {
-      margin-left: 40px;
+    width: 60%;
+    padding: 20px 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    background-color: #faff00;
+    transition: all 0.4s linear;
+    transform-origin: left top;
+    transform: scale(0) rotate(180deg);
+  }
 
-      .header-list-link {
-        font-size: 16px;
+  .header-list--active {
+    transform: scale(1) rotate(0);
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burger--active {
+    transform: translateX(5px);
+    span {
+      &:nth-child(1) {
+        transform: rotate(42deg) translateY(8px);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-42deg) translateY(-8px);
       }
     }
   }
+}
 
-  .gallery-set {
-    padding: 40px 0;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: auto auto auto auto;
-  }
-
+@media (max-width: 700px) {
   .map {
     height: auto;
     display: flex;
@@ -578,46 +571,6 @@ footer {
   header {
     padding: 5px 0;
   }
-  .header-list {
-    width: 80%;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    flex-direction: column;
-    background-color: #faff00;
-    transition: all 0.4s linear;
-    transform-origin: left top;
-    transform: scale(0) rotate(180deg);
-
-    .header-list-item {
-      margin: 30px 0;
-    }
-  }
-
-  .header-list--active {
-    transform: scale(1) rotate(0);
-  }
-
-  .burger {
-    display: block;
-  }
-
-  .burger--active {
-    transform: translateX(5px);
-    span {
-      &:nth-child(1) {
-        transform: rotate(42deg) translateY(8px);
-      }
-
-      &:nth-child(2) {
-        opacity: 0;
-      }
-
-      &:nth-child(3) {
-        transform: rotate(-42deg) translateY(-8px);
-      }
-    }
-  }
 
   .hero-wrapper {
     padding: 80px 0;
@@ -639,7 +592,6 @@ footer {
   }
 
   .our-school-title,
-  .gallery-title,
   .map-info-title {
     font-size: 26px;
   }
@@ -657,13 +609,6 @@ footer {
     padding: 40px 20px;
   }
 
-  .gallery-set {
-    padding: 20px 0;
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: auto auto auto auto auto;
-    gap: 10px;
-  }
-
   .footer-inner-title {
     font-size: 20px;
   }
@@ -675,12 +620,6 @@ footer {
       }
     }
   }
-
-  .warning {
-    padding: 10px;
-    font-size: 30px;
-  }
-
 }
 
 @media (max-width: 500px) {
