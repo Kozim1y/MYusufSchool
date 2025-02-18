@@ -1,3 +1,7 @@
+// ==========================
+AOS.init();
+// ==========================
+
 let elHeaderList = document.querySelector(".header-list");
 let elBurgerBtn = document.querySelector(".burger");
 
