@@ -1,16 +1,3 @@
-/* @font-face {
-  font-family: "Inika";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/inika-v21-latin-regular.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Inika";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/inika-v21-latin-700.woff2") format("woff2");
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -82,6 +69,10 @@ body::-webkit-scrollbar-thumb {
     &:hover {
       scale: 1.2;
     }
+
+    img {
+      width: 25px;
+    }
   }
 }
 
@@ -99,10 +90,22 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header-logo-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 
   .logo img {
-    width: 100%;
-    display: block;
+    width: 90px;
+  }
+
+  span {
+    max-width: 260px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000584;
   }
 }
 
@@ -292,7 +295,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
   column-gap: 20px;
-  row-gap: 50px ;
+  row-gap: 50px;
 }
 
 .management-card {
@@ -355,8 +358,6 @@ header {
   background-image: linear-gradient(transparent 10%, #000584),
     url("../images/rahbariyat5.jpg");
 }
-
-
 
 .management-card-title {
   color: white;
@@ -431,11 +432,7 @@ header {
   height: 100%;
   position: absolute;
   z-index: 2;
-  background-image: linear-gradient(
-    to right,
-    #3338db 75%,
-    #00048400
-  );
+  background-image: linear-gradient(to right, #3338db 75%, #00048400);
 }
 
 .map-info-title {
@@ -447,12 +444,12 @@ header {
 
 .map-info-box {
   margin: 20px 0;
-  p:nth-child(1){
+  p:nth-child(1) {
     margin-bottom: 10px;
     font-size: 20px;
     color: #f2ff00;
   }
-  p:nth-child(2){
+  p:nth-child(2) {
     color: #adb349;
   }
   a {
@@ -461,7 +458,6 @@ header {
       color: #f2ff00;
     }
   }
-
 }
 
 .map-iframe {
@@ -473,7 +469,7 @@ header {
 }
 
 footer {
-  padding: 50px 0;
+  padding: 30px 0;
   background-color: #000584;
 }
 
@@ -483,18 +479,30 @@ footer {
   align-items: center;
 }
 
-.footer-inner-title {
-  color: white;
+.footer-logo-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .footer-logo img {
+    width: 90px;
+  }
+
+  span {
+    max-width: 260px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffeb;
+  }
 }
 
 .footer-inner-socials {
   display: flex;
   align-items: center;
-
+  gap: 40px;
   a {
-    margin-left: 50px;
     img {
-      width: 30px;
+      width: 40px;
     }
   }
 }
@@ -523,11 +531,69 @@ footer {
   position: relative;
   top: -50px;
 }
-
 /* About html end */
 
+/* Qabul html start */
+.qabul-hero {
+  padding: 50px 0 0 0;
+  background-color: #3338db;
+}
+
+.qabul-inner {
+  display: flex;
+}
+
+.qabul-card {
+  width: 60%;
+  padding: 20px;
+  background-color: #ffffeb;
+  border-radius: 20px;
+}
+
+.qabul-card-title {
+  text-align: left;
+  color: #000584;
+}
+
+.qabul-card-text {
+  margin: 20px 0;
+  color: #000584;
+}
+
+.qabul-card-img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.qabul-img {
+  width: 500px;
+}
+/* Qabul html end */
+
 /* Responsive design start */
+@media (max-width: 1000px) {
+  .qabul-card {
+    width: 100%;
+  }
+
+  .qabul-img {
+    display: none;
+  }
+}
 @media (max-width: 900px) {
+  .header-logo-box {
+    gap: 15px;
+
+    .logo img {
+      width: 70px;
+    }
+  
+    span {
+      max-width: 220px;
+      font-size: 20px;
+    }
+  }
+
   .header-list {
     .header-list-item {
       .header-list-link {
@@ -545,8 +611,21 @@ footer {
     width: 50%;
   }
   .map-info-box {
-    p:nth-child(2){
+    p:nth-child(2) {
       max-width: 300px;
+    }
+  }
+
+  .footer-logo-box {
+    gap: 15px;
+  
+    .footer-logo img {
+      width: 70px;
+    }
+  
+    span {
+      max-width: 220px;
+      font-size: 20px;
     }
   }
 
@@ -638,12 +717,12 @@ footer {
   .about-hero-text {
     width: 90%;
     font-size: 20px;
-  
+
     span {
       margin: 20px 0;
     }
   }
-  
+
   .about-hero-link {
     position: relative;
     top: -50px;
@@ -695,14 +774,11 @@ footer {
     padding: 40px 20px;
   }
 
-  .footer-inner-title {
-    font-size: 20px;
-  }
-
   .footer-inner-socials {
+    gap: 20px;
     a {
       img {
-        width: 24px;
+        width: 40px;
       }
     }
   }
@@ -741,9 +817,6 @@ footer {
     width: 100%;
     margin-top: 30px;
     justify-content: space-around;
-    a {
-      margin: 0px;
-    }
   }
 }
 
@@ -751,6 +824,19 @@ footer {
   .supheader-socials {
     a {
       margin-left: 20px;
+    }
+  }
+
+  .header-logo-box {
+    gap: 10px;
+
+    .logo img {
+      width: 60px;
+    }
+  
+    span {
+      max-width: 170px;
+      font-size: 16px;
     }
   }
 
@@ -788,5 +874,17 @@ footer {
 
   .tutor-item-img {
     width: 50%;
+  }
+
+  .qabul-hero {
+    padding: 20px 0;
+  }
+
+  .qabul-card {
+    padding: 10px;
+  }
+
+  .qabul-card-text {
+    margin: 15px 0;
   }
 }
