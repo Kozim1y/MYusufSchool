@@ -41,10 +41,10 @@
     <header>
       <div class="container">
         <div class="header_inner">
-            <a class="logo header-logo-box" href="./index.html">
-              <img src="./images/logo.svg" alt="Site logo"/>
-              <span>Muhammad Yusuf nomidagi ijod maktabi</span>
-            </a>
+          <a class="logo header-logo-box" href="./index.html">
+            <img src="./images/logo.svg" alt="Site logo" />
+            <span>Muhammad Yusuf nomidagi ijod maktabi</span>
+          </a>
 
           <ul class="header-list">
             <li class="header-list-item">
@@ -71,34 +71,50 @@
     </header>
 
     <main>
-      <section class="qabul-hero">
+      <section class="contact-hero">
         <div class="container">
-          <div class="qabul-inner">
-            <div class="qabul-card" data-aos="fade-up">
-              <h1 class="qabul-card-title">Qabul haqida</h1>
-              <p class="qabul-card-text">
-                Ijod maktabiga o`quvchilarni qabul qilish O`zbekiston
-                Respublikasi Vazirlar Mahkamasi tomonidan belgilangan tartibda,
-                saralash imtihon asosida VII sinfdan amalga oshiriladi.
+          <div class="contact-hero-inner">
+            <div class="contact-hero-card" data-aos="fade-up">
+              <h1 class="contact-hero-card-title">Biz bilan bog'lanish</h1>
+
+              <p class="contact-hero-card-info">
+                Manzil:
+                <span
+                  >Andijon viloyati, Andijon shahri, Amir Temur ko'chasi,
+                  26-uy</span
+                >
+              </p>
+              <p class="contact-hero-card-info">
+                Telefon: <span>+998 74 226 37 34</span>
+              </p>
+              <p class="contact-hero-card-info">
+                Email: <span>immyud@piima.uz</span>
               </p>
 
-              <img class="qabul-card-img" src="./images/qabul.jpg" alt="img" />
+              <h2 class="contact-hero-card-subtitle">
+                Ariza, shikoyat yoki taklifingiz bo'lsa bizga murojaat qiling,
+                biz tez orada siz bilan bog'lanamiz!
+              </h2>
 
-              <p class="qabul-card-text">
-                Ijod maktabiga iqtidorli o`quvchilarni qabul qilish hamda
-                bo`shab qolgan o`rinlarni to`ldirish uchun saralash imtihonlari
-                Agentlik tomonidan belgilangan qabul kvotasi doirasida amalga
-                oshiriladi.
-              </p>
+              <form class="contact-hero-card-form">
+                <label for="username">F.I.O</label>
+                <input type="text" id="username" required>
 
-              <p class="qabul-card-text">
-                Saralash imtihonlarida yetarli ballarni to`plamagan yoki
-                qatnashmagan o`quvchilarni ijod maktabi o`quvchilar safiga qabul
-                qilinishiga yo`l qo`yilmaydi.
-              </p>
+                <label for="request-them">Murojaat mavzusi</label>
+                <input type="text" id="request-them" required>
+
+                <label for="useremail">Elektron manzil</label>
+                <input type="email" id="useremail" required>
+
+                <label for="usernumber">Telefon raqamingiz</label>
+                <input type="tel" id="usernumber" required>
+
+                <label for="request">Savolingiz</label>
+                <textarea id="request" rows="5"></textarea>
+
+                <button class="contact-hero-card-form-btn">Yuborish</button>
+              </form>
             </div>
-
-            <img class="qabul-img" src="./images/pupils.png" alt="pupils" data-aos="fade-up">
           </div>
         </div>
       </section>
@@ -108,7 +124,9 @@
       <div class="container">
         <div class="footer-inner">
           <div class="footer-logo-box">
-            <a class="footer-logo" href="./index.html"><img src="./images/logo.svg" alt="site logo"></a>
+            <a class="footer-logo" href="./index.html"
+              ><img src="./images/logo.svg" alt="site logo"
+            /></a>
             <span>Muhammad Yusuf nomidagi ijod maktabi</span>
           </div>
           <div class="footer-inner-socials">
@@ -118,13 +136,17 @@
             <a href="https://www.youtube.com/@ijodmaktabi" target="blank">
               <img src="./images/youtube.png" alt="youtube icon" />
             </a>
-            <a href="https://www.instagram.com/m_yusuf_ijod_maktabi" target="blank">
+            <a
+              href="https://www.instagram.com/m_yusuf_ijod_maktabi"
+              target="blank"
+            >
               <img src="./images/instagram.png" alt="instagram icon" />
             </a>
           </div>
         </div>
       </div>
     </footer>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js"></script>
   </body>
