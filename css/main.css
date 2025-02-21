@@ -146,10 +146,21 @@ header {
 }
 
 .hero-wrapper {
-  padding: 230px 0;
-  background-image: url("../images/hero-bg.png");
+  padding: 100px 0 0 0;
+  /* background-image: url("../images/hero-bg.png"); */
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #3338db;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-img {
+  width: 50%;
 }
 
 .hero-title {
@@ -744,7 +755,7 @@ footer {
   }
 
   .hero-wrapper {
-    padding: 100px 0;
+    padding: 70px 0 10px 0;
   }
 
   .our-school-item {
@@ -813,6 +824,23 @@ footer {
       }
     }
   }
+
+  .hero-wrapper {
+    padding: 50px 0 0 0;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+  .hero-title {
+    margin-inline: auto;
+  }
+  .hero-info {
+    text-align: center;
+  }
+  .hero-img {
+    width: 70%;
+  }
 }
 
 @media (max-width: 700px) {
@@ -877,11 +905,6 @@ footer {
 @media (max-width: 600px) {
   header {
     padding: 5px 0;
-  }
-
-  .hero-wrapper {
-    padding: 80px 0;
-    text-align: center;
   }
 
   .hero-title {
@@ -958,6 +981,12 @@ footer {
 }
 
 @media (max-width: 500px) {
+  .hero-text {
+    margin: 20px 0;
+  }
+  .hero-img {
+    width: 90%;
+  }
   .survey-cards {
     width: 100%;
   }
@@ -1023,10 +1052,6 @@ footer {
 
   .header-list {
     width: 100%;
-  }
-
-  .hero-wrapper {
-    padding: 50px 0;
   }
 
   .hero-title {
