@@ -450,6 +450,124 @@ header {
   transform: translateY(0px);
 }
 
+/* ======================================= */
+.our-team-wrapper {
+  padding: 50px 0;
+  background-color: #3338db;
+}
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.our-team-title {
+  margin: 50px 0;
+  font-size: 32px;
+  color: #faff00;
+  text-align: center;
+}
+.our-team-slider-box {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.team-slider img {
+  width: 400px;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+  border: 5px solid #faff00;
+}
+.prev-btn, .next-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 230px;
+  color: #faff00;
+  background-color: #000484c1;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  &:hover {
+    background-color: #568400;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+.team-info {
+  margin-top: 20px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.thumbnails img {
+  width: 70px;
+  height: 90px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.thumbnails img:hover {
+  transform: scale(1.2);
+}
+
+#member-name {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#member-role {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #faff00;
+}
+
+#member-university {
+  font-size: 20px;
+  color: #faff00;
+}
+
+.member-esc-box {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  p {
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #000584;
+    color: #faff00;
+    border-radius: 10px;
+  }
+}
+
+#member-tel, #member-gmail {
+  color: #fff;
+  margin: 20px 0;
+  font-size: 18px;
+  span {
+    margin: 10px 0;
+    display: block;
+    color: #faff00;
+    font-size: 20px;
+  }
+}
+/* ======================================= */
 .tutor {
   padding: 50px 0;
   background-color: #3338db;
