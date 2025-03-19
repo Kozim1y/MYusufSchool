@@ -66,7 +66,7 @@ const teamMembers = [
     role: "Ta'lim",
     university: "Andijon davlat tillar pedogogika instituti(sirtqi) 1997-yil",
     experience: "30 yil Pedagogik tajriba",
-    scientificWorks: "...",
+    scientificWorks: "ta Ilmiy ishlar va maqolalar soni",
     certificates: "8 ta Mukofotlar va sertifikatlar",
     telNumber: "+998 93 426 73 51",
     gmail:"abdulmajidsattarov@gmail.com",
